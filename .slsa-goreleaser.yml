@@ -1,0 +1,1 @@
+artifact_name: Radiojavan Downloader - {{ .OS }} {{ if eq .Arch "amd64" }}amd{{ else }}{{ .Arch }}{{ end }} - v{{ .Version }}{{ if eq .OS "windows" }}.exe{{ end }}
