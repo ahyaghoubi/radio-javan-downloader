@@ -1,6 +1,6 @@
 module github.com/ahyaghoubi/radio-javan-downloader
 
-go 1.24.1
+go 1.23
 
 require (
 	github.com/mitchellh/colorstring v0.0.0-20190213212951-d06e56a500db // indirect
