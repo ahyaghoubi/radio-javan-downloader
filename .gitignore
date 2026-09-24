@@ -1,2 +1,9 @@
-radio-javan-downloader.exe
-output.txt
+# Binaries
+/rjdl
+/rjdl.exe
+/radio-javan-downloader
+/radio-javan-downloader.exe
+/dist/
+
+# Unfinished downloads
+*.part
