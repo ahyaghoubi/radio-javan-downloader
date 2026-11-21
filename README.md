@@ -53,7 +53,7 @@ Download the build for your system and unpack it:
 Or, with Go 1.26 or newer:
 
 ```bash
-go install github.com/ahyaghoubi/radio-javan-downloader/cmd/rjdl@latest
+go install github.com/ahyaghoubi/radio-javan-downloader/v2/cmd/rjdl@latest
 ```
 
 ## Usage

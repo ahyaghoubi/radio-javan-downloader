@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ahyaghoubi/radio-javan-downloader/internal/download"
-	"github.com/ahyaghoubi/radio-javan-downloader/internal/rj"
+	"github.com/ahyaghoubi/radio-javan-downloader/v2/internal/download"
+	"github.com/ahyaghoubi/radio-javan-downloader/v2/internal/rj"
 )
 
 const (

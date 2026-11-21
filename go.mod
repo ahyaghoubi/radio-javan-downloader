@@ -1,4 +1,4 @@
-module github.com/ahyaghoubi/radio-javan-downloader
+module github.com/ahyaghoubi/radio-javan-downloader/v2
 
 go 1.26.0
 

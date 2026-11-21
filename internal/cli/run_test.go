@@ -13,8 +13,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ahyaghoubi/radio-javan-downloader/internal/download"
-	"github.com/ahyaghoubi/radio-javan-downloader/internal/rj"
+	"github.com/ahyaghoubi/radio-javan-downloader/v2/internal/download"
+	"github.com/ahyaghoubi/radio-javan-downloader/v2/internal/rj"
 )
 
 // fileServer serves files by path, supports Range requests and records

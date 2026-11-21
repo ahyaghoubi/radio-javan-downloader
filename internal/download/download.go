@@ -16,7 +16,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ahyaghoubi/radio-javan-downloader/internal/netutil"
+	"github.com/ahyaghoubi/radio-javan-downloader/v2/internal/netutil"
 )
 
 // ErrUnavailable is returned when the server does not have the file.
