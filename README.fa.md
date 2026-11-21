@@ -162,4 +162,6 @@ go build -o rjdl ./cmd/rjdl
 
 ---
 
-این پروژه در ابتدا از [ahyaghoubi/radio-javan-downloader](https://github.com/ahyaghoubi/radio-javan-downloader) فورک شده و ارتباطی با رادیو جوان ندارد. لطفاً فقط برای استفاده شخصی از آن استفاده کنید و به حقوق هنرمندان احترام بگذارید.
+نسخه ۲ این برنامه توسط [MahdiGraph](https://github.com/MahdiGraph) بازنویسی شده و ارتباطی با رادیو جوان ندارد. لطفاً فقط برای استفاده شخصی از آن استفاده کنید و به حقوق هنرمندان احترام بگذارید.
+
+مجوز: [MIT](LICENSE)

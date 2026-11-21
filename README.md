@@ -188,7 +188,10 @@ publishes a release with the binaries.
 
 ## Credits
 
-Started as a fork of
-[ahyaghoubi/radio-javan-downloader](https://github.com/ahyaghoubi/radio-javan-downloader).
+Version 2 was rewritten by [MahdiGraph](https://github.com/MahdiGraph).
 Not affiliated with Radio Javan. For personal use; please respect the rights
 of the artists and Radio Javan's terms.
+
+## License
+
+[MIT](LICENSE)
