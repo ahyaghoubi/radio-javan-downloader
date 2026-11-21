@@ -11,7 +11,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/MahdiGraph/radio-javan-downloader/internal/rj"
+	"github.com/ahyaghoubi/radio-javan-downloader/internal/rj"
 )
 
 var unsafeChars = strings.NewReplacer(

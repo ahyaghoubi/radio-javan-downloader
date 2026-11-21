@@ -9,7 +9,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/MahdiGraph/radio-javan-downloader/internal/rj"
+	"github.com/ahyaghoubi/radio-javan-downloader/internal/rj"
 )
 
 func (a *app) infoCmd() *cobra.Command {

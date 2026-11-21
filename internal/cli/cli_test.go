@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/MahdiGraph/radio-javan-downloader/internal/rj"
+	"github.com/ahyaghoubi/radio-javan-downloader/internal/rj"
 )
 
 func TestSanitize(t *testing.T) {

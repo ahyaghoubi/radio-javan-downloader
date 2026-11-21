@@ -20,13 +20,13 @@ import (
 	"github.com/spf13/pflag"
 	"golang.org/x/term"
 
-	"github.com/MahdiGraph/radio-javan-downloader/internal/download"
-	"github.com/MahdiGraph/radio-javan-downloader/internal/netutil"
-	"github.com/MahdiGraph/radio-javan-downloader/internal/rj"
+	"github.com/ahyaghoubi/radio-javan-downloader/internal/download"
+	"github.com/ahyaghoubi/radio-javan-downloader/internal/netutil"
+	"github.com/ahyaghoubi/radio-javan-downloader/internal/rj"
 )
 
 // Version is set at build time with
-// -ldflags "-X github.com/MahdiGraph/radio-javan-downloader/internal/cli.Version=v2.0.0".
+// -ldflags "-X github.com/ahyaghoubi/radio-javan-downloader/internal/cli.Version=v2.0.0".
 var Version string
 
 func version() string {

@@ -14,7 +14,7 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/term"
 
-	"github.com/MahdiGraph/radio-javan-downloader/internal/rj"
+	"github.com/ahyaghoubi/radio-javan-downloader/internal/rj"
 )
 
 // sessionEnv overrides the saved session, e.g. for scripts.

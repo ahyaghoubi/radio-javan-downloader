@@ -1,4 +1,4 @@
-module github.com/MahdiGraph/radio-javan-downloader
+module github.com/ahyaghoubi/radio-javan-downloader
 
 go 1.24.0
 

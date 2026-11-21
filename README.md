@@ -1,7 +1,7 @@
 # rjdl
 
-[![Build](https://github.com/MahdiGraph/radio-javan-downloader/actions/workflows/build.yml/badge.svg)](https://github.com/MahdiGraph/radio-javan-downloader/actions/workflows/build.yml)
-[![Release](https://img.shields.io/github/v/release/MahdiGraph/radio-javan-downloader)](https://github.com/MahdiGraph/radio-javan-downloader/releases/latest)
+[![Build](https://github.com/ahyaghoubi/radio-javan-downloader/actions/workflows/build.yml/badge.svg)](https://github.com/ahyaghoubi/radio-javan-downloader/actions/workflows/build.yml)
+[![Release](https://img.shields.io/github/v/release/ahyaghoubi/radio-javan-downloader)](https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest)
 
 A command-line downloader for [Radio Javan](https://play.radiojavan.com):
 songs, albums, music videos, podcasts, playlists and whole artists. No
@@ -40,9 +40,9 @@ Download the build for your system and unpack it:
 
 | System | Download |
 | --- | --- |
-| Windows | [64-bit](https://github.com/MahdiGraph/radio-javan-downloader/releases/latest/download/rjdl_windows_amd64.zip) · [ARM](https://github.com/MahdiGraph/radio-javan-downloader/releases/latest/download/rjdl_windows_arm64.zip) |
-| macOS | [Apple Silicon](https://github.com/MahdiGraph/radio-javan-downloader/releases/latest/download/rjdl_darwin_arm64.tar.gz) · [Intel](https://github.com/MahdiGraph/radio-javan-downloader/releases/latest/download/rjdl_darwin_amd64.tar.gz) |
-| Linux | [x86-64](https://github.com/MahdiGraph/radio-javan-downloader/releases/latest/download/rjdl_linux_amd64.tar.gz) · [ARM64](https://github.com/MahdiGraph/radio-javan-downloader/releases/latest/download/rjdl_linux_arm64.tar.gz) |
+| Windows | [64-bit](https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest/download/rjdl_windows_amd64.zip) · [ARM](https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest/download/rjdl_windows_arm64.zip) |
+| macOS | [Apple Silicon](https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest/download/rjdl_darwin_arm64.tar.gz) · [Intel](https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest/download/rjdl_darwin_amd64.tar.gz) |
+| Linux | [x86-64](https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest/download/rjdl_linux_amd64.tar.gz) · [ARM64](https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest/download/rjdl_linux_arm64.tar.gz) |
 
 - **Windows:** double-click `rjdl.exe` for the interactive mode, or run it
   in a terminal. If SmartScreen warns about an unrecognized app, choose
@@ -53,7 +53,7 @@ Download the build for your system and unpack it:
 Or, with Go 1.24 or newer:
 
 ```bash
-go install github.com/MahdiGraph/radio-javan-downloader/cmd/rjdl@latest
+go install github.com/ahyaghoubi/radio-javan-downloader/cmd/rjdl@latest
 ```
 
 ## Usage

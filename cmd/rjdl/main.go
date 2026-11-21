@@ -5,7 +5,7 @@ package main
 import (
 	"os"
 
-	"github.com/MahdiGraph/radio-javan-downloader/internal/cli"
+	"github.com/ahyaghoubi/radio-javan-downloader/internal/cli"
 )
 
 func main() {
