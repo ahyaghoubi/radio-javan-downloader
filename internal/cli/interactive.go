@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ahyaghoubi/radio-javan-downloader/internal/rj"
+	"github.com/ahyaghoubi/radio-javan-downloader/v2/internal/rj"
 )
 
 const interactiveHelp = `Paste one or more Radio Javan links to download them: songs, albums, videos,
