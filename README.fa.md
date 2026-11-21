@@ -110,6 +110,7 @@ rjdl cover https://play.radiojavan.com/album/ebi-koohe-yakh
 <tr><td><code dir="ltr">--links</code></td><td>نمایش لینک مستقیم فایل‌ها به جای دانلود</td></tr>
 <tr><td><code dir="ltr">-j 5</code></td><td>تعداد دانلود همزمان؛ پیش‌فرض ۳ است</td></tr>
 <tr><td><code dir="ltr">--flat</code></td><td>ذخیره همه فایل‌ها در یک پوشه، بدون پوشه آلبوم و پلی‌لیست</td></tr>
+<tr><td><code dir="ltr">--number</code></td><td>شماره‌گذاری فایل‌ها به ترتیب پلی‌لیست، مثلاً <code dir="ltr">01. Raha - Oh Nana.mp3</code>؛ آهنگ‌های آلبوم همیشه شماره دارند</td></tr>
 <tr><td><code dir="ltr">-f</code></td><td>دانلود دوباره و جایگزینی فایل‌های موجود</td></tr>
 <tr><td><code dir="ltr">--proxy URL</code></td><td>استفاده از پروکسی</td></tr>
 </table>

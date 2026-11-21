@@ -138,7 +138,7 @@ func (a *app) plan(ent rj.Entity) *plan {
 	pl := planner{a: a, p: p, names: map[string]bool{}, seen: map[string]bool{}}
 	switch e := ent.(type) {
 	case *rj.Media:
-		pl.add(e, a.opts.output, 0, false)
+		pl.add(e, a.opts.output, 0, 0, false)
 	case *rj.Collection:
 		pl.collection(e, a.opts.output)
 	}
@@ -162,22 +162,31 @@ func (pl *planner) collection(c *rj.Collection, parent string) {
 		dir = filepath.Join(parent, name)
 	}
 	pl.p.folders = append(pl.p.folders, &folder{col: c, dir: dir, name: name, own: !pl.a.opts.flat})
+	width := 2
+	if n := len(fmt.Sprint(len(c.Items))); n > width {
+		width = n
+	}
 	for i, m := range c.Items {
 		track := 0
-		if c.Kind == rj.KindAlbum {
+		switch {
+		case c.Kind == rj.KindAlbum:
 			track = i + 1
 			if m.Album != nil && m.Album.Track > 0 {
 				track = m.Album.Track
 			}
+		case pl.a.opts.number:
+			track = i + 1
 		}
-		pl.add(m, dir, track, c.Kind == rj.KindAlbum)
+		pl.add(m, dir, track, width, c.Kind == rj.KindAlbum)
 	}
 	for _, ch := range c.Children {
 		pl.collection(ch, dir)
 	}
 }
 
-func (pl *planner) add(m *rj.Media, dir string, track int, albumTrack bool) {
+// add plans m in dir. A track above 0 is put before the name, zero padded
+// to width digits so that file managers sort by position.
+func (pl *planner) add(m *rj.Media, dir string, track, width int, albumTrack bool) {
 	key := strings.ToLower(dir) + "\x00" + string(m.Kind) + "\x00" + m.ID
 	if pl.seen[key] {
 		return
@@ -185,7 +194,7 @@ func (pl *planner) add(m *rj.Media, dir string, track int, albumTrack bool) {
 	pl.seen[key] = true
 	name := pl.a.mediaName(m)
 	if track > 0 {
-		name = fmt.Sprintf("%02d. %s", track, name)
+		name = fmt.Sprintf("%0*d. %s", width, track, name)
 	}
 	base := sanitize(name)
 	if pl.names[strings.ToLower(filepath.Join(dir, base))] {

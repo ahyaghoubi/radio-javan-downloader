@@ -1,6 +1,7 @@
 package cli
 
 import (
+	"fmt"
 	"path/filepath"
 	"reflect"
 	"strings"
@@ -99,5 +100,31 @@ func TestPlanLayout(t *testing.T) {
 	p = a.plan(&rj.Collection{Kind: rj.KindPlaylist, Title: "Mix", Items: []*rj.Media{song}})
 	if j := p.jobs[0]; j.dir != "out" || j.base != "رها - اووه نه نه نه" {
 		t.Errorf("flat/farsi job: dir %q base %q", j.dir, j.base)
+	}
+}
+
+func TestPlanNumber(t *testing.T) {
+	songs := func(n int) []*rj.Media {
+		var ms []*rj.Media
+		for i := 1; i <= n; i++ {
+			ms = append(ms, &rj.Media{Kind: rj.KindSong, ID: fmt.Sprint(i), Title: fmt.Sprint("T", i), Artist: "A"})
+		}
+		return ms
+	}
+	a := &app{opts: options{output: "out"}}
+	if base := a.plan(&rj.Collection{Kind: rj.KindPlaylist, Title: "Mix", Items: songs(2)}).jobs[1].base; base != "A - T2" {
+		t.Errorf("without --number: %q", base)
+	}
+	a.opts.number = true
+	p := a.plan(&rj.Collection{Kind: rj.KindPlaylist, Title: "Mix", Items: songs(2)})
+	if p.jobs[0].base != "01. A - T1" || p.jobs[1].base != "02. A - T2" {
+		t.Errorf("--number: %q, %q", p.jobs[0].base, p.jobs[1].base)
+	}
+	p = a.plan(&rj.Collection{Kind: rj.KindPlaylist, Title: "Big", Items: songs(120)})
+	if p.jobs[4].base != "005. A - T5" || p.jobs[119].base != "120. A - T120" {
+		t.Errorf("--number on 120 items: %q, %q", p.jobs[4].base, p.jobs[119].base)
+	}
+	if base := a.plan(songs(1)[0]).jobs[0].base; base != "A - T1" {
+		t.Errorf("single song numbered: %q", base)
 	}
 }

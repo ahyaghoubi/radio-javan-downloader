@@ -52,6 +52,7 @@ type options struct {
 	lyrics       bool
 	farsi        bool
 	flat         bool
+	number       bool
 	items        string
 	include      []string
 	links        bool
@@ -179,6 +180,7 @@ func (a *app) addDownloadFlags(fs *pflag.FlagSet) {
 	fs.BoolVar(&o.lyrics, "lyrics", false, "also save lyrics of songs (.lrc when time-synced, .txt otherwise)")
 	fs.BoolVar(&o.farsi, "farsi", false, "use Persian titles for file and folder names when available")
 	fs.BoolVar(&o.flat, "flat", false, "save everything in the output directory, without album/playlist folders")
+	fs.BoolVar(&o.number, "number", false, "put each file's position before its name in playlists, shows and other lists,\nso they sort in order (album tracks are always numbered)")
 	fs.StringVar(&o.items, "items", "", "download only these items of a collection, e.g. 1-5,8")
 	fs.StringSliceVar(&o.include, "include", nil, "also download an artist's videos and/or podcasts: videos,podcasts")
 	fs.BoolVar(&o.links, "links", false, "print direct download links instead of downloading")
