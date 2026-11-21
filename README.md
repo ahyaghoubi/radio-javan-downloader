@@ -50,7 +50,7 @@ Download the build for your system and unpack it:
 - **macOS and Linux:** move `rjdl` to a folder in your `PATH`. If macOS
   refuses to open it, run `xattr -d com.apple.quarantine rjdl` once.
 
-Or, with Go 1.24 or newer:
+Or, with Go 1.26 or newer:
 
 ```bash
 go install github.com/ahyaghoubi/radio-javan-downloader/cmd/rjdl@latest

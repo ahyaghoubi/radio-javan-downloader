@@ -32,7 +32,7 @@
 xattr -d com.apple.quarantine rjdl
 ```
 
-اگر Go نسخه ۱.۲۴ یا جدیدتر دارید، می‌توانید مستقیم نصب کنید:
+اگر Go نسخه ۱.۲۶ یا جدیدتر دارید، می‌توانید مستقیم نصب کنید:
 
 ```bash
 go install github.com/ahyaghoubi/radio-javan-downloader/cmd/rjdl@latest
