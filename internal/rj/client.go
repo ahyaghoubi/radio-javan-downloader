@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/MahdiGraph/radio-javan-downloader/internal/netutil"
+	"github.com/ahyaghoubi/radio-javan-downloader/internal/netutil"
 )
 
 const (

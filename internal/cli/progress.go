@@ -157,7 +157,11 @@ func (f *fileBar) Wrap(r io.Reader) io.Reader {
 	if f.bar == nil {
 		return r
 	}
-	return f.bar.ProxyReader(r)
+	pr, err := f.bar.ProxyReader(r)
+	if err != nil { // the bar has already ended: read without progress
+		return r
+	}
+	return pr
 }
 
 // end completes or removes the bar. Every bar must end, or the display

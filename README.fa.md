@@ -19,9 +19,9 @@
 
 <table dir="rtl">
 <tr><th>سیستم</th><th>دانلود</th></tr>
-<tr><td>ویندوز</td><td><a href="https://github.com/MahdiGraph/radio-javan-downloader/releases/latest/download/rjdl_windows_amd64.zip">۶۴ بیتی</a> · <a href="https://github.com/MahdiGraph/radio-javan-downloader/releases/latest/download/rjdl_windows_arm64.zip">ARM</a></td></tr>
-<tr><td>مک</td><td><a href="https://github.com/MahdiGraph/radio-javan-downloader/releases/latest/download/rjdl_darwin_arm64.tar.gz">Apple Silicon</a> · <a href="https://github.com/MahdiGraph/radio-javan-downloader/releases/latest/download/rjdl_darwin_amd64.tar.gz">Intel</a></td></tr>
-<tr><td>لینوکس</td><td><a href="https://github.com/MahdiGraph/radio-javan-downloader/releases/latest/download/rjdl_linux_amd64.tar.gz">x86-64</a> · <a href="https://github.com/MahdiGraph/radio-javan-downloader/releases/latest/download/rjdl_linux_arm64.tar.gz">ARM64</a></td></tr>
+<tr><td>ویندوز</td><td><a href="https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest/download/rjdl_windows_amd64.zip">۶۴ بیتی</a> · <a href="https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest/download/rjdl_windows_arm64.zip">ARM</a></td></tr>
+<tr><td>مک</td><td><a href="https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest/download/rjdl_darwin_arm64.tar.gz">Apple Silicon</a> · <a href="https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest/download/rjdl_darwin_amd64.tar.gz">Intel</a></td></tr>
+<tr><td>لینوکس</td><td><a href="https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest/download/rjdl_linux_amd64.tar.gz">x86-64</a> · <a href="https://github.com/ahyaghoubi/radio-javan-downloader/releases/latest/download/rjdl_linux_arm64.tar.gz">ARM64</a></td></tr>
 </table>
 
 در ویندوز با دوبار کلیک روی فایل `rjdl.exe` حالت تعاملی باز می‌شود. اگر ویندوز هشدار امنیتی نشان داد، روی **More info** و بعد **Run anyway** بزنید.
@@ -32,10 +32,10 @@
 xattr -d com.apple.quarantine rjdl
 ```
 
-اگر Go نسخه ۱.۲۴ یا جدیدتر دارید، می‌توانید مستقیم نصب کنید:
+اگر Go نسخه ۱.۲۶ یا جدیدتر دارید، می‌توانید مستقیم نصب کنید:
 
 ```bash
-go install github.com/MahdiGraph/radio-javan-downloader/cmd/rjdl@latest
+go install github.com/ahyaghoubi/radio-javan-downloader/cmd/rjdl@latest
 ```
 
 ## استفاده
@@ -162,4 +162,6 @@ go build -o rjdl ./cmd/rjdl
 
 ---
 
-این پروژه در ابتدا از [ahyaghoubi/radio-javan-downloader](https://github.com/ahyaghoubi/radio-javan-downloader) فورک شده و ارتباطی با رادیو جوان ندارد. لطفاً فقط برای استفاده شخصی از آن استفاده کنید و به حقوق هنرمندان احترام بگذارید.
+نسخه ۲ این برنامه توسط [MahdiGraph](https://github.com/MahdiGraph) بازنویسی شده و ارتباطی با رادیو جوان ندارد. لطفاً فقط برای استفاده شخصی از آن استفاده کنید و به حقوق هنرمندان احترام بگذارید.
+
+مجوز: [MIT](LICENSE)

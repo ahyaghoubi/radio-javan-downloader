@@ -9,7 +9,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 root=$(pwd)
 version=${1:-$(git describe --tags --always --dirty 2>/dev/null || echo dev)}
-ldflags="-s -w -X github.com/MahdiGraph/radio-javan-downloader/internal/cli.Version=$version"
+ldflags="-s -w -X github.com/ahyaghoubi/radio-javan-downloader/internal/cli.Version=$version"
 targets=(windows/amd64 windows/arm64 darwin/arm64 darwin/amd64 linux/amd64 linux/arm64)
 
 rm -rf dist
