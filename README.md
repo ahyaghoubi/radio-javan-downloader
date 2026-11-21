@@ -108,6 +108,7 @@ fetches what is new.
 | `--links` | Print direct download links instead |
 | `-j, --jobs N` | Files downloaded at once (default 3) |
 | `--flat` | Don't create album and playlist folders |
+| `--number` | Number files in playlist order, e.g. `01. Raha - Oh Nana.mp3` (album tracks are always numbered) |
 | `-f, --force` | Download again and overwrite existing files |
 | `--proxy URL` | Use a proxy, e.g. `socks5://127.0.0.1:1080` |
 
